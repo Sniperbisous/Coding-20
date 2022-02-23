@@ -22,7 +22,7 @@ public class BinaryNumbers
 	}
 	
 }
-
+   
 /* Screen Dump
 
 Paste the output of your code here
