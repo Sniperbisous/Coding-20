@@ -6,7 +6,7 @@ Purpose: ???
 
 Author: Aiden Storer 
 School: CHHS
-Course: Computer Programming 20
+Course: Computer Science 20
  
 
 */
