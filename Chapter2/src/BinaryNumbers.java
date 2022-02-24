@@ -29,7 +29,7 @@ public class BinaryNumbers
 				+ "16 \t\t 10000 \n" + "17 \t\t 10001 \n"
 				+ "18 \t\t 10010 \n" + "19 \t\t 10011 \n"
 				+ "20 \t\t 10100 \n");
-		  
+		   
 	}
 	
 }

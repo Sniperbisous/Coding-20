@@ -2,7 +2,7 @@
 
 Program: My_Initials.java          Last Date of this Revision: Feb 24, 2022
 
-Purpose: To output the initials AASS
+Purpose: To output the initials A S using _ \ / | 
 
 Author: Aiden Storer 
 School: CHHS
@@ -24,11 +24,16 @@ public class My_Initials {
 		/\t
 		 */
 
-	}
+	} 
 
 }
 /* Screen Dump
-
-Paste the output of your code here
- 
+      ______ 			 _____
+     / 	    \ 		 	 |
+    /  	     \ 		 	 |
+   /  	      \ 		 |____
+  /____________\ 		      |
+ / 				\ 		      |
+/ 				 \ 		  ____|
+		
  */
