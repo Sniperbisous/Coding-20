@@ -28,7 +28,7 @@ public class My_Initials {
 
 }
 /* Screen Dump
-      ______ 			 _____
+      ______ 			 _____zz
      / 	    \ 		 	 |
     /  	     \ 		 	 |
    /  	      \ 		 |____
