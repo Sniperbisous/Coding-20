@@ -36,10 +36,10 @@ public class Review_SurfsUp_Part_1
 				
 			//Calculates if the height of the wave above 6 ft and displays "Great day for surfing!" if it is true
 			if(wave_h >= 6)
-			{
-				System.out.println("Great day for surfing!");
+				{
+					System.out.println("Great day for surfing!");
 
-			}
+				}
 		
 		
 		
