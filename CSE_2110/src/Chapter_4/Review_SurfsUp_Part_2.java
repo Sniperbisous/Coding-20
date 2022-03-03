@@ -1,8 +1,8 @@
 /*
 
-Program: ????.java          Last Date of this Revision: September 30, 2019
+Program: Review_SurfsUp_Part_2.java          Last Date of this Revision: March 3, 2022
 
-Purpose: ???
+Purpose: To display "Great day for surfing!" when the input wave high is higher than 6 and "Go body boarding!" when it is less than 6
 
 Author: Aiden Storer 
 School: CHHS
