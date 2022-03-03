@@ -15,9 +15,11 @@ package Chapter_4;
 
 import java.util.Scanner;
 
-public class Review_SurfsUp_Part_1 {
+public class Review_SurfsUp_Part_1 
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		
 			//Scans for users input
 			Scanner wave = new Scanner(System.in);
@@ -32,10 +34,11 @@ public class Review_SurfsUp_Part_1 {
 			wave_h = wave.nextInt();
 				
 			//Calculates if the height of the wave above 6 ft and displays "Great day for surfing!" if it is true
-			if(wave_h >= 6){
+			if(wave_h >= 6)
+			{
 				System.out.println("Great day for surfing!");
 
-		}
+			}
 		
 		
 		
