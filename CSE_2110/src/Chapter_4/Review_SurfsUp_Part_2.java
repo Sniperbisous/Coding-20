@@ -37,9 +37,10 @@ public class Review_SurfsUp_Part_2
 			System.out.println("Great day for surfing!");
 		}
 		
+		//And go body boarding if false
 		else 
 		{
-			
+			System.out.println("Go body boarding!");
 		}
 		
 	}
@@ -51,5 +52,9 @@ public class Review_SurfsUp_Part_2
 How high is your wave in feet:
 6
 Great day for surfing!
- 
+
+
+How high is your wave in feet:
+2
+Go body boarding!
  */ 
