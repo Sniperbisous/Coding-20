@@ -3,6 +3,7 @@
 Program: Review_SurfsUp_Part_1.java          Last Date of this Revision: March 2, 2022
 
 
+
 Purpose: Displays "Great day for surfing!" when the wave is higher than 6 ft.
 
 Author: Aiden Storer 
