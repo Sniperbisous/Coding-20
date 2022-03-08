@@ -29,10 +29,10 @@ public class Printing_Exercise_1
 		//Sets pri_per and copies as a double variable
 		double pri_per, copies;
 				
-		//Prompts user for the Max of the random number window
+		//Prompts user for the amount of copies to be printed
 		System.out.println("What is the amout of copies that you wish to print: ");
 				
-		//Stores users Max input
+		//Stores users input amount
 		copies = user.nextDouble();
 		
 		//Calculates what pri_per is based on which range the copies fall into 
