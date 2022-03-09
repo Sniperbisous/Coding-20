@@ -1,4 +1,19 @@
+/*
 
+Program: Grade_Exercise_5.java         Last Date of this Revision: March 9, 2022
+
+
+
+
+
+Purpose: To display the letter grade associated with the inputed percentage
+
+Author: Aiden Storer 
+School: CHHS
+Course: Computer Science 20
+ 
+
+*/
 package Chapter_4;
 
 import java.util.Scanner;
@@ -16,46 +31,63 @@ public class Grade_Exercise_5
 		char output_let;
 						
 		//Prompts user for the amount of copies to be printed
-		System.out.println("What is the percentage: \n %");
+		System.out.println("What is the percentage:");
 						
 		//Stores users input amount
 		input_per = user.nextInt();
 		
 		//Calculates what output_let is based on which range the input percentage fall into 
-		if (copies <= 100 && copies >= 90)
-				{
+		if (input_per <= 100 && input_per >= 90)
+			{
 					
-			output_let = A;
+				output_let = 'A';
 						
-				}
+			}
 				
-		else if (copies <= 89 && copies >= 80)
+		else if (input_per <= 89 && input_per >= 80)
 			{
 			
-				pri_per = 0.28;
+				output_let = 'B';
 					
 			}
 				
-		else if (copies <= 79 && copies >= 70)
+		else if (input_per <= 79 && input_per >= 70)
 			{
 			
-				pri_per = 0.27;
+				output_let = 'C';
 				
 			}
 				
-		else if (copies <= 69 && copies >= 60)
+		else if (input_per <= 69 && input_per >= 60)
 			{
 
-				pri_per = 0.26;
+				output_let = 'D';
 			
 			}
 		
 		else 
 			{
 
-				pri_per = 0.25;
+				output_let = 'F';
 			
 			}
+		
+		//Displays the letter grade of the inputed percentage
+		System.out.println("Your letter grade is: " + output_let);
 	}
 
 }
+
+/* Screen Dump
+
+What is the percentage:
+88
+Your letter grade is: B
+
+
+What is the percentage:
+69
+Your letter grade is: D
+
+
+ */ 

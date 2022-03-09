@@ -5,6 +5,7 @@ Program: Review_Printing_Exercise_1.java         Last Date of this Revision: Mar
 
 
 
+
 Purpose: To calculate and display the price per amount of inputed copies as well as the total cost 
 
 Author: Aiden Storer 
@@ -30,7 +31,7 @@ public class Printing_Exercise_1
 		double pri_per, copies;
 				
 		//Prompts user for the amount of copies to be printed
-		System.out.println("What is the amout of copies that you wish to print: ");
+		System.out.println("What is the amount of copies that you wish to print: ");
 				
 		//Stores users input amount
 		copies = user.nextDouble();
@@ -83,14 +84,14 @@ public class Printing_Exercise_1
 
 /* Screen Dump
 
-What is the amout of copies that you wish to print: 
+What is the amount of copies that you wish to print: 
 1001
 
 Price per copy is: $0.25 
 The total cost is: $250.25
 
 
-What is the amout of copies that you wish to print: 
+What is the s of copies that you wish to print: 
 23
 
 Price per copy is: $0.30 
