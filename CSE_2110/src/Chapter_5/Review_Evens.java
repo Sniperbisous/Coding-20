@@ -1,4 +1,4 @@
-package CHapter_5;
+package Chapter_5;
 
 public class Review_Evens {
 
