@@ -1,9 +1,10 @@
 /*
-Program: Review_NumberSum.java         Last Date of this Revision: March 15, 2022
+Program: Review_NumberSum.java         Last Date of this Revision: March 16, 2022
 
 
 
-Purpose: Displays the even numbers between 1 and 20 
+
+Purpose: Displays all numbers between 1 and the inputed maxNumthen display the sum of all numbers added together
 
 Author: Aiden Storer 
 School: CHHS
