@@ -1,5 +1,6 @@
 /*
-Program: Review_AccountSetup.java         Last Date of this Revision: March 17, 2022 
+Program: Review_AccountSetup.java         Last Date of this Revision: March 27, 2022 
+
 
 
 
@@ -47,9 +48,9 @@ public class Ex_6_DigitsSum
 	    fin = first_d + sec_d + third_d;
 	    
 	    //Displays the first second and third digits then the sum of all of them
-	    System.out.println("\n" + "The sum of the digits is: " + fin);
-	    System.out.println("The sum of the digits is: " + sec_d);
-	    System.out.println("The sum of the digits is: " + third_d);
+	    System.out.println("\n" + "The first digits is: " + first_d);
+	    System.out.println("The second digits is: " + sec_d);
+	    System.out.println("The third digits is: " + third_d);
 	    System.out.println("The sum of the digits is: " + fin);
 	    
 	    //Stops the loop
@@ -62,8 +63,11 @@ public class Ex_6_DigitsSum
 }
 /* Screen Dump
 
-Enter a positive 3 digit interger:
-375
+Enter a positive 3 digit interger: 375
+
+The first digits is: 3
+The second digits is: 7
+The third digits is: 5
 The sum of the digits is: 15
 
 */ 
