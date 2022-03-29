@@ -1,13 +1,13 @@
 /*
 
-Program: Grade_Exercise_5.java         Last Date of this Revision: March 8, 2022
+Program: Review_TimeConverter.java         Last Date of this Revision: March 29, 2022
 
 
 
 
 
 
-Purpose: To display the letter grade associated with the inputed percentage
+Purpose: To prompt the user for their desired time conversion then perform the conversion based off of the selected conversion method. 
 
 Author: Aiden Storer 
 School: CHHS
