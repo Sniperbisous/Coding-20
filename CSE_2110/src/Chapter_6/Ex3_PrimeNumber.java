@@ -1,4 +1,4 @@
-/*
+
 
 package Chapter_6;
 
@@ -8,14 +8,20 @@ public class Ex3_PrimeNumber
 {
 	
 
-	public static void isPrime(int num)
+	public static void isPrime()
 	{
-		do {
-			num / div 
+		do
+		{
+		div =+ 1;
+		Remain_prime = num % div;
+		
+		if (prime != 0)
+		{
 			
-		}while(div <= num);
-		prime =
-		num = prime;
+		}
+			
+		Pprime = 2;
+		if (Pprime == prime)
 	}
 	
 	public static void main(String[] args)
@@ -29,4 +35,3 @@ public class Ex3_PrimeNumber
 	}
 
 }
-*/
