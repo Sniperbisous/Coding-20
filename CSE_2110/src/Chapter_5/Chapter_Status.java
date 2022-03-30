@@ -9,9 +9,7 @@ public class Chapter_Status
 	{
 		/*
 		  
-		 Work In Progress... (March 18, 2022)
-		 Needed:
-		 - critical thinking 
+		 Done
 		  
 		 */
 
