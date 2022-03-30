@@ -1,4 +1,20 @@
+/*
 
+Program: Review_TimeConverter.java         Last Date of this Revision: March 30, 2022 
+
+
+
+
+
+
+Purpose: To prompt the user for their desired number and calculate whether it is a prime number or not. 
+
+Author: Aiden Storer 
+School: CHHS
+Course: Computer Science 20
+ 
+
+*/
 
 package Chapter_6;
 
@@ -25,35 +41,111 @@ public class Ex3_PrimeNumber
 		//Starts a do-while loop
 		do
 		{
-			System.out.println("=========================== ");
+			//Divides the num by the div and finds the remainder
 			Pnum = num % div;
-			System.out.println("divder " + div);
+			
+			//Adds 1 to div
 			div += 1;
-			System.out.println("remaining result " + Pnum);
+			
+			//Checks to see when the remainder is 0
 			switch(Pnum)
 			{
 				case 0:
 				{
+					//Adds 1 to prime
 					prime += 1;
-					System.out.println(" +1" );
+					
 				}
 			}
-			System.out.println("0 remaining counter: " + prime);
+			//Allows prime to leave the loop without becoming 0 		
 			NewP = prime;
+			
+		//Ends the loop when div is larger than the num
 		} while (div <= num);
 		
-		
+		//returns a true or false value
 		isPrime = (NewP == 2);
 		return isPrime;
 	}
 	
 	public static void main(String[] args)
 	{
-	//Scans for users input
-	Scanner user = new Scanner(System.in);
-	System.out.println("enter number");
+		//Scans for users input
+		Scanner user = new Scanner(System.in);
+		
+		//Prompts the user for a number
+		System.out.println("Enter number:");
+		
+		//Stores users input
 		int num = user.nextInt();
-		System.out.println("Is it prime? " + isPrime(num));
+		
+		//Prints the text below
+		System.out.println("=========================== ");
+		
+		//Prints the text below
+		System.out.println("Is it prime? \n \n" );
+		
+		//Prints the text below
+		System.out.print("\t   |   |\n" 
+		+ "\t   |   |\n" 
+		+ "\t   |   |\n"
+		+ "\t   |   |\n"
+		+ "\t   |   |\n"
+		+ "\t   |   |\n"
+		+ "\t   |   |\n"
+		+ "\t   |   |\n");
+		
+		//Prints the text below
+		System.out.println("\\==========================/ ");
+		System.out.println(" \\========================/ ");
+		System.out.println("  \\======================/ ");
+		System.out.println("   \\====================/ ");
+		System.out.println("    \\==================/ ");
+		System.out.println("     \\================/ ");
+		System.out.println("      \\==============/ ");
+		System.out.println("       \\============/ ");
+		System.out.println("        \\==========/ ");
+		System.out.println("         \\========/ ");
+		System.out.println("          \\======/ ");
+		System.out.println("           \\====/ ");
+		System.out.println("            \\==/ ");
+		System.out.println("             \\/ \n");
+		
+		//Calls the isPrime function and displays it
+		System.out.println("\t   " + isPrime(num));
 	}
 
 }
+/* Screen Dump
+
+Enter number:
+13
+=========================== 
+Is it prime? 
+ 
+
+	   		|   |
+	   		|   |
+	   		|   |
+	   		|   |
+	   		|   |
+	   		|   |
+	   		|   |
+	   		|   |
+\==========================/ 
+ \========================/ 
+  \======================/ 
+   \====================/ 
+    \==================/ 
+     \================/ 
+      \==============/ 
+       \============/ 
+        \==========/ 
+         \========/ 
+          \======/ 
+           \====/ 
+            \==/ 
+             \/ 
+
+	   		true
+*/ 
