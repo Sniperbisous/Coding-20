@@ -1,6 +1,6 @@
 /*
 
-Program: Review_TimeConverter.java         Last Date of this Revision: March 30, 2022 
+Program: Ex3_PrimeNumber.java         Last Date of this Revision: March 30, 2022 
 
 
 
