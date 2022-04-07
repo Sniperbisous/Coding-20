@@ -1,10 +1,11 @@
 /*
-Program: Review_Circle_Part4.java         Last Date of this Revision: April , 2022 
+Program: Review_Circle_Part4.java         Last Date of this Revision: April 7, 2022 
 
 
 
 
-Purpose:  
+
+Purpose: Create methods to be run outside of this class 
 
 Author: Aiden Storer 
 School: CHHS
@@ -71,7 +72,7 @@ public class Circle
 	/* ===========================================================================================================================================================================
 	 Part 4
 	 
-	.......*/
+	Creates a method to compare the radius of two objects*/
 	public boolean equals(Object c)
 	{
 		Circle testObj = (Circle)c;
@@ -87,7 +88,7 @@ public class Circle
 			return(false);
 		}
 	}
-	
+	//Creates a method to compare the radius of a object and a input(overrides original equals(Object c) class)
 	public boolean equals(Object c, int r)
 	{
 		Circle test_1 = (Circle)c;
@@ -105,6 +106,7 @@ public class Circle
 		}
 	}
 	
+	//Creates a method to print the radius as a string
 	public String toString()
 	{
 		String circleString;
@@ -113,6 +115,7 @@ public class Circle
 		return(circleString);
 	}
 	
+	//Creates a method to print the inputed radius as a string(overriding toString())
 	public String toString(int r)
 	{
 		String circleString;
