@@ -1,12 +1,12 @@
 /*
-Program: Review_Circle_Part3.java         Last Date of this Revision: April , 2022 
+Program: Review_Circle_Part3.java         Last Date of this Revision: April 7, 2022 
 
 
 
 
 
 
-Purpose: To create an object conneccted to Circle.java and print "The formula for the area of a circle is:" + the return of the function displayAreaFormula()
+Purpose: To create an object connected to Circle.java and print "The formula for the area of a circle is:" + the return of the function displayAreaFormula()
 
 Author: Aiden Storer 
 School: CHHS

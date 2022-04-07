@@ -112,6 +112,15 @@ public class Circle
 		circleString = "Circle has radius " + radius;
 		return(circleString);
 	}
+	
+	public String toString(int r)
+	{
+		String circleString;
+		radius = r;
+		circleString = "Circle has radius " + radius;
+		return(circleString);
+	}
+	
 	public static void main(String[] args) 
 	{
 		
