@@ -1,8 +1,12 @@
 package Chapter_7;
 
+import java.awt.Font;
+import java.util.Scanner;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JTextArea;
 
 public class Ex1_MySavings_gui 
 {
@@ -35,16 +39,28 @@ public class Ex1_MySavings_gui
 		
 		JLabel label = new JLabel("Coins");
 		label.setSize(30, 30);
+		label.setFont(new Font("Serif", Font.PLAIN, 36));
+		label.setHorizontalAlignment(JLabel.CENTER);
 		main_frame.add(label);
 		return main_frame;
 		
 	}
+	
+	public JFrame addTextFrame() 
+	{
+		JTextArea textArea = new JTextArea("hahaha");
+		main_frame.add(textArea);
+		return main_frame;
+		
+	}
+	
 	
 	public static void main(String[] args) 
 	{
 		Ex1_MySavings_gui main_gui = new Ex1_MySavings_gui();
 		main_gui.addButton();
 		main_gui.addlable();
+		main_gui.addTextFrame();
 		
 		System.out.print(main_gui);
 		main_frame.setVisible(true);
