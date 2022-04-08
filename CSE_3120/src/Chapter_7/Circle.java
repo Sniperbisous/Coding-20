@@ -88,6 +88,7 @@ public class Circle
 			return(false);
 		}
 	}
+	 
 	//Creates a method to compare the radius of a object and a input(overrides original equals(Object c) class)
 	public boolean equals(Object c, int r)
 	{
