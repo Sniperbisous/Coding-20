@@ -1,11 +1,13 @@
 package Chapter_7;
 
+import java.awt.BorderLayout;
 import java.awt.Font;
 import java.util.Scanner;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
 public class Ex1_MySavings_gui 
@@ -22,25 +24,34 @@ public class Ex1_MySavings_gui
 		
 		
 	}
-	
+	public JFrame addPannel() 
+	{
+		
+		JPanel new_panel = new JPanel();
+		BorderLayout borderLayoutManager = new BorderLayout();
+		new_panel.setLayout(borderLayoutManager);
+		main_frame.add(new_panel);
+		return main_frame;
+		
+	}
 	public JFrame addButton() 
 	{
 		JButton newButton = new JButton("Submit");
 		newButton.setSize(100, 100);
-		main_frame.add(newButton);
+		//JPanel.add(newButton);
 		
 		
 		return main_frame;
 		
 	}
 	
-	public JFrame addlable() 
+	public JFrame addLable() 
 	{
 		
 		JLabel label = new JLabel("Coins");
 		label.setSize(30, 30);
 		label.setFont(new Font("Serif", Font.PLAIN, 36));
-		label.setHorizontalAlignment(JLabel.CENTER);
+		label.setHorizontalAlignment(JLabel.LEFT);
 		main_frame.add(label);
 		return main_frame;
 		
@@ -49,7 +60,10 @@ public class Ex1_MySavings_gui
 	public JFrame addTextFrame() 
 	{
 		JTextArea textArea = new JTextArea("hahaha");
+		textArea.setSize(30, 30);
+		
 		main_frame.add(textArea);
+		
 		return main_frame;
 		
 	}
@@ -59,7 +73,7 @@ public class Ex1_MySavings_gui
 	{
 		Ex1_MySavings_gui main_gui = new Ex1_MySavings_gui();
 		main_gui.addButton();
-		main_gui.addlable();
+		main_gui.addLable();
 		main_gui.addTextFrame();
 		
 		System.out.print(main_gui);
