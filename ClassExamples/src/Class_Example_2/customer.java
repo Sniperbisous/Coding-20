@@ -50,7 +50,12 @@ public class customer
 		Address = ad;
 	}
 	
-	
+	public String toString()
+	{
+		return ("First Name: " + firstName + 
+				"Last name: " + lastName + 
+				"Address: " + Address);
+	}
 	
 	
 	
