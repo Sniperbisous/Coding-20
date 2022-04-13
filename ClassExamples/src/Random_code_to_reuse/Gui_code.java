@@ -1,8 +1,7 @@
-package Chapter_7;
+package Random_code_to_reuse;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
-import java.util.Scanner;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -10,11 +9,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-public class Ex1_MySavings_gui 
+public class Gui_code 
 {
 	static JFrame main_frame = new JFrame("Piggy Bank");
 	static JPanel new_panel = new JPanel();
-	public Ex1_MySavings_gui()
+	public Gui_code()
 	{
 		
 		main_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -24,6 +23,7 @@ public class Ex1_MySavings_gui
 		
 		
 	}
+	
 	public JFrame addPannel() 
 	{
 		
@@ -69,7 +69,7 @@ public class Ex1_MySavings_gui
 	
 	public static void main(String[] args) 
 	{
-		Ex1_MySavings_gui main_gui = new Ex1_MySavings_gui();
+		Gui_code main_gui = new Gui_code();
 		main_gui.addButton();
 		main_gui.addLable();
 		main_gui.addTextFrame();
@@ -80,5 +80,4 @@ public class Ex1_MySavings_gui
 		System.out.print(main_gui);
 		main_frame.setVisible(true);
 	}
-
 }

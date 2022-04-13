@@ -11,7 +11,9 @@ import javax.swing.JTextArea;
 
 public class Ex1_mySavings_gui2 
 {
-	static JFrame main_frame = new JFrame("Piggy Bank");
+	/* 
+	 * static JFrame main_frame = new JFrame("Piggy Bank");
+	 
 	public Ex1_mySavings_gui2()
 	{
 		
@@ -92,16 +94,17 @@ public class Ex1_mySavings_gui2
 		return (main_frame);
 		
 	}
-	
+	*/
 		public static void main(String[] args) 
 	{
+		/*
 		Ex1_mySavings_gui2 main_gui = new Ex1_mySavings_gui2();
 		main_gui.addQuarters();
 		main_gui.addDimes();
 		main_gui.addNickels();
 		
 		System.out.print(main_gui);
-		main_frame.setVisible(true);
+		main_frame.setVisible(true);*/
 
 	}
 
