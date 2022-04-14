@@ -16,6 +16,8 @@ Course: Computer Science 20
 */
 package Chapter_7;
 
+import java.util.Scanner;
+
 public class MySavings_Object 
 {
 	public double total;
@@ -25,10 +27,6 @@ public class MySavings_Object
 		total = 0;
 	}
 	
-	public MySavings_Object(double s)
-	{
-		total = s;
-	}
 	
 	public void addPenny()
 	{
@@ -49,25 +47,12 @@ public class MySavings_Object
 	{
 		total =+ 0.25;
 	}
-	public void removePenny()
+	public void remove(double remv)
 	{
-		total =- 0.01;
+		
+		total =- remv;
 	}
 	
-	public void removeNickel()
-	{
-		total =- 0.05;
-	}
-	
-	public void removeDime()
-	{
-		total =- 0.10;
-	}
-	
-	public void removeQuarter()
-	{
-		total =- 0.25;
-	}
 	
 	public double showTotal()
 	{

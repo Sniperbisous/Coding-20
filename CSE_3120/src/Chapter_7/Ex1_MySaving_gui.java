@@ -9,6 +9,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.event.InputMethodListener;
+import java.util.Scanner;
 import java.awt.event.InputMethodEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -65,14 +66,69 @@ public class Ex1_MySaving_gui {
 		Dis.setBounds(252, 11, 206, 64);
 		Main_panel.add(Dis);
 		
+		JLabel Total_Lb = new JLabel("");
+		Total_Lb.setBounds(252, 86, 166, 14);
+		Main_panel.add(Total_Lb);
+		
 		JButton Submit = new JButton("Submit");
 		Submit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
 				
 				double C_tx_var;
+				int choice;
 				C_tx_var = Double.parseDouble(C_tx.getText());
-				Dis.setText("Your Choice was: " + C_tx_var);
+				Dis.setText("Your Choice was: " + (int)C_tx_var);
+				choice = (int)C_tx_var;
+				if (choice > 0 && choice >= 7) 
+				{
+					//Scans for users input
+					Scanner user = new Scanner(System.in);
+				
+					MySavings_Object piggyBank = new MySavings_Object();
+				
+				
+				
+					switch(choice) 
+					{
+						case 1:
+						{
+							
+							Total_Lb.setText(piggyBank.toString());
+						}
+						case 2:
+						{
+							piggyBank.addPenny();
+						}
+						case 3:
+						{
+							piggyBank.addNickel();
+						}
+						
+						case 4:
+						{
+							piggyBank.addDime();
+						}
+						case 5:
+						{
+							piggyBank.addQuarter();
+						}
+						case 6:
+						{
+							double amount_remv = user.nextDouble();
+							System.out.print("How much would you like to remove");
+							piggyBank.remove(amount_remv);
+						}
+						
+					}
+				}
+				
+				
+					
+					
+					
+				
+				
 				
 				
 				
@@ -102,36 +158,30 @@ public class Ex1_MySaving_gui {
 		Main_panel.add(C_tx);
 		C_tx.setColumns(10);
 		
-		JLabel lblNewLabel = new JLabel("Total in bank:");
-		lblNewLabel.setBounds(252, 86, 75, 14);
-		Main_panel.add(lblNewLabel);
 		
-		JLabel Option_1_label = new JLabel("1. Set total in bank.");
-		Option_1_label.setBounds(10, 11, 160, 14);
-		Main_panel.add(Option_1_label);
 		
-		JLabel Option_2_label = new JLabel("2. Show total in bank.");
-		Option_2_label.setBounds(10, 36, 160, 14);
+		JLabel Option_2_label = new JLabel("1. Show total in bank.");
+		Option_2_label.setBounds(10, 11, 160, 14);
 		Main_panel.add(Option_2_label);
 		
-		JLabel Option_3_label = new JLabel("3. Add a penny.");
-		Option_3_label.setBounds(10, 61, 160, 14);
+		JLabel Option_3_label = new JLabel("2. Add a penny.");
+		Option_3_label.setBounds(10, 36, 160, 14);
 		Main_panel.add(Option_3_label);
 		
-		JLabel Option_4_label = new JLabel("4. Add a nickel.");
-		Option_4_label.setBounds(10, 86, 160, 14);
+		JLabel Option_4_label = new JLabel("3. Add a nickel.");
+		Option_4_label.setBounds(10, 61, 160, 14);
 		Main_panel.add(Option_4_label);
 		
-		JLabel Option_5_label = new JLabel("5. Add a dime.");
-		Option_5_label.setBounds(10, 111, 160, 14);
+		JLabel Option_5_label = new JLabel("4. Add a dime.");
+		Option_5_label.setBounds(10, 86, 160, 14);
 		Main_panel.add(Option_5_label);
 		
-		JLabel Option_6_label = new JLabel("6. Add a quarter.");
-		Option_6_label.setBounds(10, 136, 160, 14);
+		JLabel Option_6_label = new JLabel("5. Add a quarter.");
+		Option_6_label.setBounds(10, 111, 160, 14);
 		Main_panel.add(Option_6_label);
 		
-		JLabel Option_7_label = new JLabel("7. Take money out.");
-		Option_7_label.setBounds(10, 161, 160, 14);
+		JLabel Option_7_label = new JLabel("6. Take money out.");
+		Option_7_label.setBounds(10, 136, 160, 14);
 		Main_panel.add(Option_7_label);
 		
 		
