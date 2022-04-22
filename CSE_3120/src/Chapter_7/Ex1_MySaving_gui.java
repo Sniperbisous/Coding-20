@@ -3,7 +3,8 @@ Program: Ex1_MySaving_gui.java         Last Date of this Revision: April 20, 202
 
 
 
-Purpose: To create a gui that allows the user to add coins and remove a amount from a piggy bank 
+
+Purpose: To create a gui that allows the user to add coins and remove a amount from a piggy bank.
 
 Author: Aiden Storer 
 School: CHHS
