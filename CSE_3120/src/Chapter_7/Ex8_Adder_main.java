@@ -22,7 +22,7 @@ public class Ex8_Adder_main
 
 	public static void main(String[] args) 
 	{
-		//Scans for users input
+		//Scans for users input 
 		Scanner user = new Scanner(System.in);
 		
 		//sets rand_n1, rand_n2, input_awn, n1, n2 and attempts as int variables

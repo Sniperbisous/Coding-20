@@ -9,7 +9,7 @@ public class Ex8_Adder_Functions
 	
 		//Sets the amount of total_correct to 0 when called
 		public  Ex8_Adder_Functions()
-		{
+		{ 
 			total_Points = 0;
 		}
 		
