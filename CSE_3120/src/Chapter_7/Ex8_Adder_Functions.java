@@ -1,3 +1,17 @@
+/*
+Program: Ex8_Adder_Functions.java         Last Date of this Revision: April 28, 2022  
+
+
+
+
+Purpose: To track and provide outputs to Ex8_Adder_main.java.
+
+Author: Aiden Storer 
+School: CHHSS
+Course: Computer Science 20
+ 
+
+*/
 package Chapter_7;
 
 public class Ex8_Adder_Functions 

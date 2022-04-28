@@ -1,10 +1,10 @@
 /*
-Program: Review_Circle_Part4.java         Last Date of this Revision: April 7, 2022 
+Program: Ex8_Adder_main.java         Last Date of this Revision: April 28, 2022  
 
 
 
 
-Purpose: To overwrite the original input for the functions equals and toString from Circle.java 
+Purpose: To display and track questions to be answered by the user and points obtained by the user by answer the question correctly.
 
 Author: Aiden Storer 
 School: CHHS
