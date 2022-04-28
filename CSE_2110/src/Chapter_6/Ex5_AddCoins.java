@@ -21,7 +21,7 @@ import java.util.Scanner;
 
 public class Ex5_AddCoins 
 {
-	
+	 
 	//Calculates the total dollar amount of the inputed coins when called
 	public static double getDollarAmount(int quart, int dime, int nick, int pen)
 	{
