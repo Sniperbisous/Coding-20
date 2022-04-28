@@ -5,7 +5,6 @@ Program: Review_Circle_Part1.java         Last Date of this Revision: April 5, 2
 
 
 
-
 Purpose: To call the methods in circle.java to test if they are working by inputing the radius variable as 3 then printing the results  
 
 Author: Aiden Storer 
@@ -30,7 +29,7 @@ public class Review_Circle_Part1
 		//Prints "Circle radius:" and the getRadius() return of function from the object point
 		System.out.println("Circle radius: " + point.getRadius());
 		
-		//Prints "Circle circumference:" and the circumference() return of function from the object point
+		//Prints "Circle circumference:" and the circumference() return of function from the object point 
 		System.out.println("Circle circumference: " + point.circumference());
 	}
 
