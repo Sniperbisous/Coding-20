@@ -9,8 +9,8 @@ public class Review_Student_roster {
 		//Scans for users input 
 		Scanner user = new Scanner(System.in);
 		int num_student = user.nextInt();
-		String[] roster = {"name"};
-		for (int i = 1; i <= num_student; i++)
+		String[] roster = new String[num_student];
+		for (int i = 0; i <= num_student; i++)
 		{
 			String name = user.next();
 			roster[i] = name;
