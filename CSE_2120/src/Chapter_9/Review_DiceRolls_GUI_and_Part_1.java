@@ -84,32 +84,40 @@ public class Review_DiceRolls_GUI_and_Part_1 {
 		
 		//Creates a new Button
 		JButton Roll_Dice_button = new JButton("Roll The Dice");
+		//Runs the following code when the button is pressed
 		Roll_Dice_button.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent e) 
 			{
-				
+				//Creates a new array called outcomes with 19 elements
 				int[] outcomes = new int[19];
 				
-				int numRolls;
-				int outcome;
+				//Sets numRolls and outcome as a int variable
+				int numRolls,outcome;
+				
+				//Initializes the display string
 				String display = "";
 				
-				//Takes the text from the C_tx box and turns it into a int
+				//Takes the text from the txt_NumberOfRolls box and turns it into a int
 				numRolls = Integer.parseInt(txt_NumberOfRolls.getText());
 				
-				
+				//Creates a loop to roll the dice the amount of desired times 
 				for (int roll = 0; roll < numRolls; roll++)
 				{
+					//Generates the result for each di
 					outcome = (int)(6 * Math.random() + 1) + (int)(6 * Math.random() + 1) + (int)(6 * Math.random() + 1);
+					
+					//Counts how many times each possibility occurs
 					outcomes[outcome] += 1;
 				}
 
+				//Creates a loop to create a string that contains all the values of each element
 				for (int i = 3; i <= 18; i++)
 				{
 					display += (i + ":  " + outcomes[i] + "\t");
 				}
 				
+				//Displays the string that contains all the times that a number is rolled
 				Rolls.setText("You rolled: ");
 				Roll_result_txt.setText(display);
 				
