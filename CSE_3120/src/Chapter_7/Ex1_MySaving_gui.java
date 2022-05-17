@@ -25,6 +25,8 @@ import java.awt.event.InputMethodListener;
 import java.awt.event.InputMethodEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
 
 public class Ex1_MySaving_gui {
 
@@ -79,33 +81,29 @@ public class Ex1_MySaving_gui {
 		//Creates a new panel
 		JPanel Main_panel = new JPanel();
 		frame.getContentPane().add(Main_panel, BorderLayout.CENTER);
-		Main_panel.setLayout(null);
 		
 		//Creates a new label
 		JLabel Dis = new JLabel("Your Choice was:  ");
 		Dis.setBounds(188, 9, 206, 64);
-		Main_panel.add(Dis);
 		
 		//Creates a new label
 		JLabel Total_Lb = new JLabel("");
 		Total_Lb.setBounds(180, 86, 261, 64);
-		Main_panel.add(Total_Lb);
 		
 		//Creates a new label
 		JLabel Remv_tx = new JLabel("");
 		Remv_tx.setBounds(10, 200, 206, 43);
-		Main_panel.add(Remv_tx);
 		
 		//Creates a new text field
 		Remv_tx_field = new JTextField();
+		Remv_tx_field.setBounds(44, 254, 86, 20);
 		Remv_tx_field.setText("0.0");
 		Remv_tx_field.setVisible(false);
-		Remv_tx_field.setBounds(44, 254, 86, 20);
-		Main_panel.add(Remv_tx_field);
 		Remv_tx_field.setColumns(10);
 		
 		//Creates a new button
 		JButton Submit = new JButton("Submit");
+		Submit.setBounds(368, 251, 89, 23);
 		Submit.addActionListener(new ActionListener() 
 		{
 			//Reads when the button is clicked
@@ -205,11 +203,10 @@ public class Ex1_MySaving_gui {
 					}
 			}
 		});
-		Submit.setBounds(368, 251, 89, 23);
-		Main_panel.add(Submit);
 		
 		//Creates a new text field
 		C_tx = new JTextField();
+		C_tx.setBounds(53, 169, 86, 20);
 		C_tx.addInputMethodListener(new InputMethodListener() 
 		{
 			public void caretPositionChanged(InputMethodEvent event) 
@@ -221,43 +218,48 @@ public class Ex1_MySaving_gui {
 				
 			}
 		});
-		C_tx.setBounds(53, 169, 86, 20);
-		Main_panel.add(C_tx);
 		C_tx.setColumns(10);
 		
 		//Creates a new label
 		JLabel QuartersLabel = new JLabel("Choice:");
 		QuartersLabel.setBounds(10, 172, 45, 14);
-		Main_panel.add(QuartersLabel);
 		
 		//Creates a new label
 		JLabel Option_2_label = new JLabel("1. Show total in bank.");
 		Option_2_label.setBounds(10, 11, 160, 14);
-		Main_panel.add(Option_2_label);
 		
 		//Creates a new label
 		JLabel Option_3_label = new JLabel("2. Add a penny.");
 		Option_3_label.setBounds(10, 36, 160, 14);
-		Main_panel.add(Option_3_label);
 		
 		//Creates a new label
 		JLabel Option_4_label = new JLabel("3. Add a nickel.");
 		Option_4_label.setBounds(10, 61, 160, 14);
-		Main_panel.add(Option_4_label);
 		
 		//Creates a new label
 		JLabel Option_5_label = new JLabel("4. Add a dime.");
 		Option_5_label.setBounds(10, 86, 160, 14);
-		Main_panel.add(Option_5_label);
 		
 		//Creates a new label
 		JLabel Option_6_label = new JLabel("5. Add a quarter.");
 		Option_6_label.setBounds(10, 111, 160, 14);
-		Main_panel.add(Option_6_label);
 		
 		//Creates a new label
 		JLabel Option_7_label = new JLabel("6. Take money out.");
 		Option_7_label.setBounds(10, 136, 160, 14);
+		Main_panel.setLayout(null);
+		Main_panel.add(Dis);
+		Main_panel.add(Total_Lb);
+		Main_panel.add(Remv_tx);
+		Main_panel.add(Remv_tx_field);
+		Main_panel.add(Submit);
+		Main_panel.add(C_tx);
+		Main_panel.add(QuartersLabel);
+		Main_panel.add(Option_2_label);
+		Main_panel.add(Option_3_label);
+		Main_panel.add(Option_4_label);
+		Main_panel.add(Option_5_label);
+		Main_panel.add(Option_6_label);
 		Main_panel.add(Option_7_label);
 		
 	}
