@@ -11,7 +11,7 @@ public class Lesson_1_LED {
 	      DigitalOutput greenLED = new DigitalOutput();
 
 	      //Address | This tells your program where to find the device you want to work with. Your LED is connected to port 1 and your code reflects that. IsHubPortDevice must be set if you are not using a Smart Phidget (more on this later).
-	      redLED.setHubPort(1);
+	      redLED.setHubPort(1);       
 	      redLED.setIsHubPortDevice(true);
 	      
 	      greenLED.setHubPort(4);
