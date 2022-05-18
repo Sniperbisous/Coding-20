@@ -1,0 +1,40 @@
+package Phidget;
+
+import com.phidget22.DigitalOutput;
+
+public class Lesson_1_LED {
+
+	public static void main(String[] args) throws Exception
+	{
+		//Create | Here you've created a DigitalOutput object for your LED. An object represents how you interact with your device. DigitalOutput is a class from the Phidgets library that's used to provide a voltage to things like LEDs.
+	      DigitalOutput redLED = new DigitalOutput();
+	      DigitalOutput greenLED = new DigitalOutput();
+
+	      //Address | This tells your program where to find the device you want to work with. Your LED is connected to port 1 and your code reflects that. IsHubPortDevice must be set if you are not using a Smart Phidget (more on this later).
+	      redLED.setHubPort(1);
+	      redLED.setIsHubPortDevice(true);
+	      
+	      greenLED.setHubPort(4);
+	      greenLED.setIsHubPortDevice(true);
+
+	      //Open | Open establishes a connection between your object and your physical Phidget. You provide a timeout value of 1000 to give the program 1000 milliseconds (1 second) to locate your Phidget. If your Phidget can't be found, an exception will be thrown.
+	      redLED.open(2000);
+	      greenLED.open(2000);
+
+	      //Use your Phidgets | Here is where you can have some fun and use your Phidgets! You can turn your LED on/off by setting the state to true/false. The sleep command keeps your LED on by letting 1000 milliseconds pass before turning the LED off.
+	      for (int i = 0; i < 3; i++) 
+	      {
+	          redLED.setState(true);
+	          greenLED.setState(true);
+	          Thread.sleep(1000);
+	          redLED.setState(false);
+	          greenLED.setState(false);
+	          Thread.sleep(1000);
+	      }
+	      
+	      redLED.setState(false);
+	      greenLED.setState(false);
+
+	}
+
+}

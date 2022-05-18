@@ -9,7 +9,7 @@ public class GettingStarted
   public static void main(String[] args) throws Exception
   {
 
-	  /*
+	  
       //Create | Here you've created a DigitalOutput object for your LED. An object represents how you interact with your device. DigitalOutput is a class from the Phidgets library that's used to provide a voltage to things like LEDs.
       DigitalOutput redLED = new DigitalOutput();
       DigitalOutput greenLED = new DigitalOutput();
@@ -38,23 +38,8 @@ public class GettingStarted
       
       redLED.setState(false);
       greenLED.setState(false);
-      */
       
-      //Create 
-      DigitalInput redButton = new DigitalInput();
-
-      //Address 
-      redButton.setHubPort(0);
-      redButton.setIsHubPortDevice(true);
-
-      //Open 
-      redButton.open(5000);
-
-      //Use your Phidgets 
-      while(true)
-      {
-          System.out.println("Button State: " + redButton.getState());
-          Thread.sleep(150);
-      }
+      
+     
   }
 }
