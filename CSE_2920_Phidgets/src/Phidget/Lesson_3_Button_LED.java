@@ -33,32 +33,66 @@ public class Lesson_3_Button_LED
 
 		  //Use your Phidgets | This code will turn on the LED when the matching button is pressed and turns off the LED when the matching button is released. The sleep function slows down the loop so the button state is only checked every 150ms.
 		  
-		  
+		  int redButton_click_up = 0;
+		  int redButton_click_down = 0;
+		  int greenButton_click_up = 0;
+		  int greenButton_click_down = 0;
+		  int red_clicks = 0; 
+		  int clicks = 0;
 		  while(true){
 			  
 		         if(redButton.getState())
 		         {
-		            greenLED.setState(false);
-		            
+		        	 redButton_click_up = 0;
+		        	 redButton_click_down = 0;
+		        	 greenButton_click_up = 0;
+		        	 greenButton_click_down = 0;
+		           redLED.setState(true);
+		           redButton_click_up += 2;
+		           redButton_click_down += 1;
+		           
 		         } 
 		         
 		         else 
 		         {
-		            greenLED.setState(true);
+		            redLED.setState(false);
+		            red_clicks = (redButton_click_up - redButton_click_down);
+		            if (red_clicks > 0)
+		            {
+		            	clicks += 1;
+		            }
+		            
+		            else 
+		            {
+		            	clicks += 0;	
+		            }
 		         }
 
 		         if(greenButton.getState())
 		         {
-		        	redLED.setState(false);
+		        	 greenLED.setState(true);
+		        	 
 		         }
 		         
 		         else 
 		         {
-		            redLED.setState(true);
+		            greenLED.setState(false);
+		            
 		         }
 		         
-		         
-		            Thread.sleep(100);
+		          System.out.print(clicks);  
+		          
+	       /* boolean buttonRed_Status = redButton.getState();  
+		        int clicks = 0;
+		        System.out.println("amount of clicks " + clicks);
+		        while (redButton.getState());
+		        {
+		        	clicks += 1;
+		        	//buttonRed_Status = false;
+		        	System.out.println("amount of clicks " + clicks);
+		        }
+		        */
+		        Thread.sleep(100);
 		  }
 	}
 		  
