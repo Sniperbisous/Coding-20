@@ -3,7 +3,7 @@ package Phidget;
 //Add Phidgets Library | You added a file called phidget22 when configuring your project. Import gives you access to the Phidgets library code inside that file. 
 import com.phidget22.*;
 		
-public class Lesson_3_Button_LED 
+public class Practice_Tug_Of_War 
 {
 
 	public static void main(String[] args) throws Exception
@@ -40,23 +40,24 @@ public class Lesson_3_Button_LED
 		  int greenButton_click_down = 0;
 		  int red_clicks = 0; 
 		  int green_clicks = 0;
-		  int clicks = 1;
+		  int clicks = 0;
 		  int Clicks_past_amount = 0;
-		  while(true){
+		  
+		  System.out.println("Clicks: " + clicks);
+		  while(clicks < 10 || clicks > (-10))
+		  {
 			  
 		         if(redButton.getState() == true)
 		         {
-		           
+		           redLED.setState(true);
 		           redButton_click_up += 2;
 		           redButton_click_down += 1;
-		          greenLED.setState(false);
-		           
 		         } 
 		         
 		         else 
 		         {
-		            greenLED.setState(true);
 		            
+		            redLED.setState(false);
 		            red_clicks = (redButton_click_up - redButton_click_down);
 		            if (red_clicks > 0)
 		            {
@@ -75,7 +76,7 @@ public class Lesson_3_Button_LED
 
 		         if(greenButton.getState() == true)
 		         {
-		        	 redLED.setState(false);
+		        	 greenLED.setState(true);
 		        	 greenButton_click_up += 2;
 			         greenButton_click_down += 1;
 		        	 
@@ -83,17 +84,17 @@ public class Lesson_3_Button_LED
 		         
 		         else 
 		         {
-		             redLED.setState(true);
+		             greenLED.setState(false);
 		            
 		            green_clicks = (greenButton_click_up - greenButton_click_down);
 		            if (green_clicks > 0)
 		            {
-		            	clicks += 1;
+		            	clicks -= 1;
 		            }
 		            
 		            else 
 		            {
-		            	clicks += 0;	
+		            	clicks -= 0;	
 		            }
 		            
 		            greenButton_click_up = 0;
@@ -111,7 +112,32 @@ public class Lesson_3_Button_LED
 		         
 		        Thread.sleep(10);
 		  }
+		  
+		  for (int i = 0; i < 3; i++);
+			{
+				redLED.setState(true);
+				greenLED.setState(true);
+				redLED.setState(false);
+				greenLED.setState(false);
+			}
+			
+		  if (clicks == 10)
+		  {
+			  	for (int i = 0; i < 5; i++);
+			  			{
+			  				redLED.setState(true);
+			  				redLED.setState(false);
+			  			}
+			  			
+			}
+		  else 
+		  {
+			  for (int i = 0; i < 5; i++);
+	  			{
+	  				greenLED.setState(true);
+	  				greenLED.setState(false);
+	  			}  
+		  }
 	}
 		  
 }
-
