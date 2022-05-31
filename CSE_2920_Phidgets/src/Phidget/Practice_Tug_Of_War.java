@@ -43,8 +43,21 @@ public class Practice_Tug_Of_War
 		  int clicks = 0;
 		  int Clicks_past_amount = 0;
 		  
-		  System.out.println("Clicks: " + clicks);
-		  while(clicks < 10 || clicks > (-10))
+		  
+		  
+		  for (int i = 0; i < 3; i++)
+			{
+			  	Thread.sleep(1000);
+				redLED.setState(true);
+				greenLED.setState(true);
+				Thread.sleep(150);
+				
+				redLED.setState(false);
+				greenLED.setState(false);
+				Thread.sleep(150);
+			}
+		  System.out.println("GO! \nClicks: " + clicks);
+		  while(clicks < 10 && clicks > (-10))
 		  {
 			  
 		         if(redButton.getState() == true)
@@ -103,39 +116,49 @@ public class Practice_Tug_Of_War
 		         
 		         
 		             
-		         if((redButton.getState() == true && clicks != Clicks_past_amount) || (greenButton.getState() == true && clicks != Clicks_past_amount))
+		         if((redButton.getState() == false && clicks != Clicks_past_amount) || (greenButton.getState() == false && clicks != Clicks_past_amount))
 		         {
 		         System.out.println("Clicks: " + clicks);
 		         Clicks_past_amount = clicks;
 		         }
 		         
-		         
 		        Thread.sleep(10);
 		  }
 		  
-		  for (int i = 0; i < 3; i++);
+		  for (int i = 0; i < 1; i++)
 			{
 				redLED.setState(true);
 				greenLED.setState(true);
+				Thread.sleep(150);
+				
 				redLED.setState(false);
 				greenLED.setState(false);
+				Thread.sleep(150);
 			}
 			
 		  if (clicks == 10)
 		  {
-			  	for (int i = 0; i < 5; i++);
+			  System.out.println("Red wins");
+			  	for (int i = 0; i < 5; i++)
 			  			{
 			  				redLED.setState(true);
+			  				Thread.sleep(150);
+			  				
 			  				redLED.setState(false);
+			  				Thread.sleep(150);
 			  			}
 			  			
 			}
 		  else 
 		  {
-			  for (int i = 0; i < 5; i++);
+			  System.out.println("Green wins");
+			  for (int i = 0; i < 5; i++)
 	  			{
 	  				greenLED.setState(true);
+	  				Thread.sleep(150);
+	  				
 	  				greenLED.setState(false);
+	  				Thread.sleep(150);
 	  			}  
 		  }
 	}
