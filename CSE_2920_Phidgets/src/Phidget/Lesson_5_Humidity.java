@@ -39,7 +39,7 @@ public class Lesson_5_Humidity
     		  System.out.println("Humidity: " + humiditySensor.getHumidity() +" %RH, Temperature: " + temperatureSensor.getTemperature() + " °C" );
     	  }
           
-          Thread.sleep(1000);
+          Thread.sleep(100);
       }
   }
 }
