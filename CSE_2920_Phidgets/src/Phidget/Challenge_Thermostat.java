@@ -33,26 +33,67 @@ public class Challenge_Thermostat
 		  greenButton.open(1000);
 		  greenLED.open(100);
 	      
+		  int redButton_click_up = 0;
+		  int redButton_click_down = 0;
+		  int greenButton_click_up = 0;
+		  int greenButton_click_down = 0;
+		  int red_clicks = 0; 
+		  int green_clicks = 0;
+		  int clicks = 0;
+		  int Clicks_past_amount = 0;
 	      double setTemp = 21;
 	      double temp;
 	      boolean greenbutton_pressed_last_run, redbutton_pressed_last_run;
 	      int Count = 0;
+	      
+	      System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" + "\t" + "Set temperature " + setTemp + " °C");
+	        
 	      //Use your Phidgets | This code will print humidity and temperature read by the sensor every 150ms.
 	      while(true)
 	      {
-	    	  
-	    	  
 	    	  temp = temperatureSensor.getTemperature(); 
 	    	  
-	    	  if(greenButton.getState() == true)
-	    	  {
-	    		 setTemp += 1;
-	    	  }
+	    	  if(redButton.getState() == true)
+		         {
+		           
+		           redButton_click_up += 2;
+		           redButton_click_down += 1;
+		         } 
+		         
+		         else 
+		         {
+		          
+		            red_clicks = (redButton_click_up - redButton_click_down);
+		            if (red_clicks > 0)
+		            {
+		            	setTemp -= 1;
+		            }
+		            redButton_click_up = 0;
+		        	redButton_click_down = 0;
+		        	
+		         }
+
+		         if(greenButton.getState() == true)
+		         {
+		        	 
+		        	 greenButton_click_up += 2;
+			         greenButton_click_down += 1;
+		        	 
+		         }
+		         
+		         else 
+		         {
+		            
+		            green_clicks = (greenButton_click_up - greenButton_click_down);
+		            if (green_clicks > 0)
+		            {
+		            	 setTemp += 1;
+		            }
+
+		            greenButton_click_up = 0;
+		        	greenButton_click_down = 0;
+		         }
 	    	  
-	    	  else if(redButton.getState() == true)
-	    	  {
-	    		 setTemp -= 1;
-	    	  }
 	    	  
 	    	  if (temp < (setTemp + 2) && temp > (setTemp - 2))
 	    	  {
@@ -65,9 +106,9 @@ public class Challenge_Thermostat
 	    		  greenLED.setState(false);
 	    		  redLED.setState(true);
 	    	  }
-	    	  Count += 1;
+	    	  Count += 10;
 	    	  
-	    	  while(Count == 1000)
+	    	  while(Count == 6500)
 	    	  {
 	    		 
 	    		  System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" + "\t" + "Set temperature " + setTemp + " °C");
@@ -76,13 +117,6 @@ public class Challenge_Thermostat
 	    	  }
 	    	  Thread.sleep(10);
 	       }
-	      
-	      
-		
-	     
-   	  
-   	 
-
 	}
 
 }
