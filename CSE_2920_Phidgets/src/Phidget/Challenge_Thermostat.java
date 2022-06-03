@@ -36,10 +36,11 @@ public class Challenge_Thermostat
 	      double setTemp = 21;
 	      double temp;
 	      boolean greenbutton_pressed_last_run, redbutton_pressed_last_run;
+	      int Count = 0;
 	      //Use your Phidgets | This code will print humidity and temperature read by the sensor every 150ms.
 	      while(true)
 	      {
-	    	  redbutton_pressed_last_run = redbutton_pressed_last_run;
+	    	  
 	    	  
 	    	  temp = temperatureSensor.getTemperature(); 
 	    	  
@@ -64,16 +65,14 @@ public class Challenge_Thermostat
 	    		  greenLED.setState(false);
 	    		  redLED.setState(true);
 	    	  }
+	    	  Count += 1;
 	    	  
-	    	  while((greenButton.getState() != true || redButton.getState() != true) || (greenbutton_pressed_last_run != true || redbutton_pressed_last_run != true))
+	    	  while(Count == 1000)
 	    	  {
-	    		   greenbutton_pressed_last_run =  greenButton.getState();
-
-	    		   redbutton_pressed_last_run =  redButton.getState();
-
-	          System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" + "\t" + "Set temperature " + setTemp + " °C");
+	    		 
+	    		  System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" + "\t" + "Set temperature " + setTemp + " °C");
 	          
-	          Thread.sleep(10000);
+	    		  Count = 0;
 	    	  }
 	    	  Thread.sleep(10);
 	       }
