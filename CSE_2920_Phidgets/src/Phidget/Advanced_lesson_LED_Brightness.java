@@ -15,7 +15,7 @@ public class Advanced_lesson_LED_Brightness
 		        //Address 
 		        redLED.setHubPort(1);
 		        redLED.setIsHubPortDevice(true);
-
+ 
 		        //Open 
 		        redLED.open(1000);
 

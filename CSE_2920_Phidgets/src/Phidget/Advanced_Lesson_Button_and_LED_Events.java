@@ -25,7 +25,7 @@ public class Advanced_Lesson_Button_and_LED_Events
 		        greenButton.setIsHubPortDevice(true);
 		        redLED.setHubPort(1);
 		        redLED.setIsHubPortDevice(true);
-		        greenLED.setHubPort(4);
+		        greenLED.setHubPort(4); 
 		        greenLED.setIsHubPortDevice(true);
 		        
 		        int Clicks = 0;

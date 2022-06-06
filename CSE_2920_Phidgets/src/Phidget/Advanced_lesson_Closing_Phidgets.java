@@ -32,7 +32,7 @@ public class Advanced_lesson_Closing_Phidgets {
         //Use your Phidgets
         System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" );
         
-        
+         
     }
 }
   

@@ -41,7 +41,7 @@ public class Advanced_Lesson_Button_Events
         
         greenButton.addStateChangeListener(new DigitalInputStateChangeListener() 
         {
-            public void onStateChange(DigitalInputStateChangeEvent g) 
+            public void onStateChange(DigitalInputStateChangeEvent g ) 
             {
             	if (g.getState() == true)
             	{
