@@ -18,6 +18,21 @@ public class Advanced_lesson_Closing_Phidgets {
         
         //Close your Phidgets
         temperatureSensor.close();
+        
+       /*
+        
+         //Use your Phidgets
+        System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" );
+        
+       */
+        
+        //Open your Phidgets
+        temperatureSensor.open(1000);
+        
+        //Use your Phidgets
+        System.out.println("Temperature: " + temperatureSensor.getTemperature() + " °C" );
+        
+        
     }
 }
   
